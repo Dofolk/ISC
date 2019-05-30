@@ -3,8 +3,12 @@ import random
 import matplotlib.pyplot as plt
 import numpy as np
 
+#set X as the chosen table
+
 X=list()
 count=0
+
+#build X
 
 while (count<=10000):
     v1=random.uniform(0,1)
@@ -13,6 +17,8 @@ while (count<=10000):
         X.append(v2)
         count+=1    
 
+#set function f     
+        
 x=np.arange(0,1,0.01)
 f=20*x*(1-x)**3
 #plt.subplot(121)
