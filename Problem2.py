@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
+#build X1 to X3 as chosen table for each question
+
 count=0
 X1=list()
 X2=list()
