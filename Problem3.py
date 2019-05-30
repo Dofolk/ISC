@@ -7,7 +7,7 @@ A=list()
 count=0
 pbcount=0
 
-def anglefn(A,a,b,c):
+def anglefn(A,b,a,c):
     ba=(A[b][0]-A[a][0],A[b][1]-A[a][1])
     bc=(A[b][0]-A[c][0],A[b][1]-A[c][1])
     angle = np.arccos(np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc)))
