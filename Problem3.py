@@ -1,6 +1,7 @@
 import math
 import random
 import numpy as np
+import time
 
 count=0
 trian_area=0 #set the summation of all triangle area
@@ -8,6 +9,8 @@ trian_area=0 #set the summation of all triangle area
 def calc_area(p1, p2, p3):
     (x1, y1), (x2, y2), (x3, y3) = p1,p2,p3
     return 0.5 * abs(x2 * y3 + x1 * y2 + x3 * y1 - x3 * y2 - x2 * y1 - x1 * y3)
+
+t_start=time.time()
 
 #do 100000 times
 while (count<100000):
@@ -35,8 +38,12 @@ while (count<100000):
 #let p be the probability of triangle
 p=4*trian_area/(count*np.pi)
 
+t_end=time.time()
+
 #print out resault
 print('凹四邊形機率：')
 print(p)
 print('凸四邊形機率：')
 print(1-p)
+print('花費時間：')
+print(t_end-t_start)
