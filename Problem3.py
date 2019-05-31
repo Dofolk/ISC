@@ -23,13 +23,6 @@ while (count<100000):
         if(v1**2+v2**2<=1):
             pt[ptcount]=[v1,v2]
             ptcount+=1
-    '''#2nd step:choose 3rd point in uniform
-    while 1:
-        v1=random.uniform(0,1)
-        v2=random.uniform(0,1)
-        if(v1**2+v2**2<=1):
-            u=[v1,v2]
-            break'''
     #2nd step:calculate triangle area and sum up all of them
     k=calc_area(pt[0],pt[1],pt[2])
     trian_area+=k
